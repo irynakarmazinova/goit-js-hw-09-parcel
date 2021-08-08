@@ -64,3 +64,12 @@ Eсли использовать как шаблон<br>
    заменив имя*пользователя и имя*репозитория на свои.<br> "homepage":
    "https://имя*пользователя.github.io/имя*репозитория",<br> "scripts": {<br>
    "build": "parcel build src/\*.html --public-url /имя_репозитория/"<br> },<br>
+  
+------------------------------------------------------------------------<br>
+Удалить devDependencies<br>
+https://docs.npmjs.com/uninstalling-packages-and-dependencies<br>
+  
+npm uninstall <name> удаляет модуль из node_modules, но не package.json<br>
+npm uninstall <name> --save также удаляет его из dependencies в package.json<br>
+npm uninstall <name> --save-dev также удаляет его из devDependencies в package.json<br>
+npm -g uninstall <name> --save также удаляет его глобально<br>
