@@ -90,6 +90,7 @@ package.json<br> npm -g uninstall <name> --save также удаляет его
 # REACT
   npx create-react-app . - установить в этой папке
     https://create-react-app.dev/docs/getting-started/
+  добавить .gitignore, .prettierrc.json/yaml
   
 # Настройка pre-commit хуков
 
