@@ -1,3 +1,5 @@
+# Install Parcel
+
 1.  npm install parcel-bundler --save-dev<br>
 2.  "scripts": { <br>"dev": "parcel <your entry file>", <br>"build": "parcel
     build <your entry file>" <br>}, <br>
@@ -67,6 +69,8 @@
    "build": "parcel build src/\*.html --public-url /имя_репозитория/"<br> },<br>
 
 ------------------------------------------------------------------------<br> npm
+  # dependencies/devDependencies
+  
 i - установка в dependencies(--save; требуются для запуска, попадёт в продакшн,
 пакеты, от которых ваш пакет зависит непосредственно: как правило — библиотеки)
 <br>npm i -D - установка в devDependencies(--save-dev; только для разработки/как
@@ -82,7 +86,7 @@ uninstall <name> --save также удаляет его из dependencies в pa
 uninstall <name> --save-dev также удаляет его из devDependencies в
 package.json<br> npm -g uninstall <name> --save также удаляет его глобально<br>
 ------------------------------------------------------------------------<br>
-
+https://create-react-app.dev/docs/getting-started/
 # Настройка pre-commit хуков
 
 ## 1 - Установка зависимостей
@@ -132,5 +136,3 @@ npx mrm@2 lint-staged
   }
 }
 ```
-
-------------------------------------------------------------------------<br>
