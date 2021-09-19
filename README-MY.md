@@ -53,7 +53,8 @@
               folder: dist
 
 ------------------------------------------------------------------------<br>
-Eсли использовать как шаблон<br>
+
+# Eсли использовать как шаблон<br>
 
 1. npm ci<br>
 2. npm run dev<br>
@@ -65,14 +66,16 @@ Eсли использовать как шаблон<br>
    "https://имя*пользователя.github.io/имя*репозитория",<br> "scripts": {<br>
    "build": "parcel build src/\*.html --public-url /имя_репозитория/"<br> },<br>
 
-------------------------------------------------------------------------<br>
-Удалить devDependencies<br>
-https://docs.npmjs.com/uninstalling-packages-and-dependencies<br>
-
-npm i - установка в dependencies(--save; требуются для запуска, попадёт в
-продакшн, пакеты, от которых ваш пакет зависит непосредственно: как правило —
-библиотеки) <br>npm i -D - установка в devDependencies(--save-dev; только для
+------------------------------------------------------------------------<br> npm
+i - установка в dependencies(--save; требуются для запуска, попадёт в продакшн,
+пакеты, от которых ваш пакет зависит непосредственно: как правило — библиотеки)
+<br>npm i -D - установка в devDependencies(--save-dev; только для
 разработки)<br>
+------------------------------------------------------------------------<br>
+
+# Удалить devDependencies<br>
+
+https://docs.npmjs.com/uninstalling-packages-and-dependencies<br>
 
 npm uninstall <name> удаляет модуль из node_modules, но не package.json<br> npm
 uninstall <name> --save также удаляет его из dependencies в package.json<br> npm
