@@ -88,8 +88,10 @@ uninstall <name> --save-dev также удаляет его из devDependencie
 package.json<br> npm -g uninstall <name> --save также удаляет его глобально<br>
 ------------------------------------------------------------------------<br>
 # REACT
+  npx create-react-app . - установить в этой папке
+    https://create-react-app.dev/docs/getting-started/
+  
 # Настройка pre-commit хуков
-  https://create-react-app.dev/docs/getting-started/
 
 ## 1 - Установка зависимостей
 
