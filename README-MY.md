@@ -64,12 +64,70 @@ Eсли использовать как шаблон<br>
    заменив имя*пользователя и имя*репозитория на свои.<br> "homepage":
    "https://имя*пользователя.github.io/имя*репозитория",<br> "scripts": {<br>
    "build": "parcel build src/\*.html --public-url /имя_репозитория/"<br> },<br>
-  
+
 ------------------------------------------------------------------------<br>
 Удалить devDependencies<br>
 https://docs.npmjs.com/uninstalling-packages-and-dependencies<br>
-  
-npm uninstall <name> удаляет модуль из node_modules, но не package.json<br>
-npm uninstall <name> --save также удаляет его из dependencies в package.json<br>
-npm uninstall <name> --save-dev также удаляет его из devDependencies в package.json<br>
-npm -g uninstall <name> --save также удаляет его глобально<br>
+
+npm i - установка в dependencies(--save; требуются для запуска, попадёт в
+продакшн, пакеты, от которых ваш пакет зависит непосредственно: как правило —
+библиотеки) <br>npm i -D - установка в devDependencies(--save-dev; только для
+разработки)<br>
+
+npm uninstall <name> удаляет модуль из node_modules, но не package.json<br> npm
+uninstall <name> --save также удаляет его из dependencies в package.json<br> npm
+uninstall <name> --save-dev также удаляет его из devDependencies в
+package.json<br> npm -g uninstall <name> --save также удаляет его глобально<br>
+------------------------------------------------------------------------<br>
+
+# Настройка pre-commit хуков
+
+## 1 - Установка зависимостей
+
+Установить в проект следующие пакеты.
+
+```bash
+npm install --save-dev prettier eslint
+```
+
+## 2 - Инициализация lint-staged и husky
+
+Пользователям **MacOS** и **Linux** систем необходимо выполнить в терминале
+следующую команду. Она установит и настроит `husky` и `lint-staged` в
+зависимости от инструментов качества кода из зависимостей проекта в
+`package.json`.
+
+```bash
+npx mrm lint-staged
+```
+
+Пользователям **Windows** необходимо выполнить следующую команду. Она делает
+тоже самое.
+
+```bash
+npx mrm@2 lint-staged
+```
+
+## 3 - Интерграция плагинов
+
+Ссылки на документацию по интеграции плагинов в популярные редакторы.
+
+- [Prettier editor integration](https://prettier.io/docs/en/editors.html)
+- [ESLint editor integration](https://eslint.org/docs/user-guide/integrations)
+
+## 4 - Настройки VSCode
+
+Для комфортной работы, после установки плагинов, нужно добавить несколько
+настроек редактора для автосохранения и форматирования файлов.
+
+```json
+{
+  "files.autoSave": "onFocusChange",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
+}
+```
+
+------------------------------------------------------------------------<br>
