@@ -1,3 +1,4 @@
+# JS
 # Install Parcel
 
 1.  npm install parcel-bundler --save-dev<br>
@@ -86,8 +87,9 @@ uninstall <name> --save также удаляет его из dependencies в pa
 uninstall <name> --save-dev также удаляет его из devDependencies в
 package.json<br> npm -g uninstall <name> --save также удаляет его глобально<br>
 ------------------------------------------------------------------------<br>
-https://create-react-app.dev/docs/getting-started/
+# REACT
 # Настройка pre-commit хуков
+  https://create-react-app.dev/docs/getting-started/
 
 ## 1 - Установка зависимостей
 
