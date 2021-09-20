@@ -91,7 +91,7 @@ package.json<br> npm -g uninstall <name> --save также удаляет его
   npx create-react-app . - установить в этой папке<br>
     https://create-react-app.dev/docs/getting-started/<br>
   добавить .gitignore, .prettierrc.json/yaml<br>
-  
+  ------------------------------------------------------------------------<br> npm
 # Настройка pre-commit хуков
 
 ## 1 - Установка зависимостей
@@ -141,3 +141,8 @@ npx mrm@2 lint-staged
   }
 }
 ```
+  ------------------------------------------------------------------------<br> npm
+  # Установить пакет prop-types в рпоект
+  https://www.npmjs.com/package/prop-types
+  npm i prop-types
+  ------------------------------------------------------------------------<br> npm
