@@ -98,10 +98,33 @@ package.json<br> npm -g uninstall <name> --save также удаляет его
 
 Установить в проект следующие пакеты.
 
+    добавить как зависимость разработки<br>
 ```bash
-  добавить как зависимость разработки
   npm install --save-dev prettier husky lint-staged eslint
 ```
+  
+  добавить файлы в корень проекта<br>
+  .prettierrc.yaml (   
+printWidth: 80
+tabWidth: 2
+useTabs: false
+semi: true
+singleQuote: true
+trailingComma: all
+bracketSpacing: true
+jsxBracketSameLine: false
+arrowParens: avoid
+proseWrap: always
+)<br>
+.huskyrc ({
+  "hooks": {
+    "pre-commit": "lint-staged"
+  }
+})<br>
+  .lintstagedrc ({
+  "src/**/*.{json,css,scss,md}": ["prettier --write"],
+  "src/**/*.{js,jsx,ts,tsx}": ["prettier --write", "eslint --fix"]
+})<br>
 
 ## 2 - Инициализация lint-staged и husky
 
