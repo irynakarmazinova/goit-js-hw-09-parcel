@@ -169,7 +169,7 @@ npx mrm@2 lint-staged
   }
 }
 ```
-  №№ 5 - Absolute Imports (import Button from 'components/Button';)
+  ## 5 - Absolute Imports (import Button from 'components/Button';)<br> 
   
 добавить файл jsconfig.json ({
   "compilerOptions": {
