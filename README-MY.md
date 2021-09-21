@@ -176,7 +176,7 @@ npx mrm@2 lint-staged
     "baseUrl": "src"
   },
   "include": ["src"]
-})
+})<br> 
   ------------------------------------------------------------------------<br> 
   # Установить пакет prop-types в проект<br>
   https://www.npmjs.com/package/prop-types<br>
