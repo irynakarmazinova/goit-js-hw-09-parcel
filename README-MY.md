@@ -169,8 +169,16 @@ npx mrm@2 lint-staged
   }
 }
 ```
+  №№ 5 - Absolute Imports (import Button from 'components/Button';)
+  
+добавить файл jsconfig.json ({
+  "compilerOptions": {
+    "baseUrl": "src"
+  },
+  "include": ["src"]
+})
   ------------------------------------------------------------------------<br> 
-  # Установить пакет prop-types в рпоект<br>
+  # Установить пакет prop-types в проект<br>
   https://www.npmjs.com/package/prop-types<br>
   npm i prop-types<br>
   ------------------------------------------------------------------------<br> 
