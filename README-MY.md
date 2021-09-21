@@ -99,7 +99,8 @@ package.json<br> npm -g uninstall <name> --save также удаляет его
 Установить в проект следующие пакеты.
 
 ```bash
-npm install --save-dev prettier eslint
+  добавить как зависимость разработки
+  npm install --save-dev prettier husky lint-staged eslint
 ```
 
 ## 2 - Инициализация lint-staged и husky
